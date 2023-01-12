@@ -1,5 +1,16 @@
+$color-bg: #282c34;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   text-align: center;
+  background-color: $color-bg;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -32,6 +43,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
