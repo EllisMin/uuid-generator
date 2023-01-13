@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Version } from "../../types";
+import { Card } from "../Card";
 import { Header } from "../Header";
 import "./styles.scss";
 type Props = {
@@ -11,6 +12,7 @@ export const Layout = ({ children }: Props) => {
   return (
     <div className="layout">
       <Header version={version} setVersion={setVersion} />
+      <Card version={version} />
       {children}
     </div>
   );

@@ -12,13 +12,13 @@ const VERSION_LIST: Version[] = ["uuid1", "uuid4"];
 export const Header = (props: Props) => {
   const { version, setVersion } = props;
 
-  const renderVersionOption = (text: Version) => (
+  const renderVersionOption = (ver: Version) => (
     <button
-      key={text}
-      className="select-ver-opt"
-      onClick={() => setVersion(version)}
+      key={ver}
+      className="custom-button"
+      onClick={() => setVersion(ver)}
     >
-      {version}
+      {ver}
     </button>
   );
 
