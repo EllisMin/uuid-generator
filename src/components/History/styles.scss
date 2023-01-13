@@ -1,0 +1,26 @@
+.history {
+  & .custom-button {
+    color: #fff;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    min-height: 200px;
+    border: 1px #ccc solid;
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 0.75rem;
+    text-align: left;
+
+    &-record {
+      border-bottom: 1px solid #ccc;
+      margin: 0.25rem;
+      padding: 0.2rem;
+      padding-bottom: 0.5rem;
+      white-space: pre-wrap;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import { Version } from "../../types";
+import { HistoryRecord, Version } from "../../types";
 import "./styles.scss";
 
 type Props = {
@@ -13,11 +13,7 @@ export const Header = (props: Props) => {
   const { version, setVersion } = props;
 
   const renderVersionOption = (ver: Version) => (
-    <button
-      key={ver}
-      className="custom-button"
-      onClick={() => setVersion(ver)}
-    >
+    <button key={ver} className="custom-button" onClick={() => setVersion(ver)}>
       {ver}
     </button>
   );
